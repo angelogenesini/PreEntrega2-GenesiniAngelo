@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+      
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(17, 80, 198,.8);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    margin-top: 150px;
+
+}    
+
+
+.logo-peque{
+    width: 300px;
+    height: 100px;\index.html
+}
+
+
+img{
+ max-width: 100%;
+}
+
+
+ul{
+    list-style: none;
+        
+}
+
+a{
+   text-decoration: none; 
+   color: orange;
+   
+   
+}
+
+.img-tam{
+    width: 400;
+    height: 300;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.profe{
+    background-color: black;
+    margin: 50px 0px;
+    padding: 10px;
+    width: 450px;
+    border: solid 5px orange;
+    text-align: center;
+    position: relative;
+    border-radius: 7px;
+    
+    
+        
+}
+
+.profe-img{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.menu {
+    font-family: 'Almarai', sans-serif;
+   display: flex;
+   flex-direction: row;
+   justify-content:space-evenly;  
+   gap: 60px;
+}
+
+
+
+#staff{
+    margin-top: 20px;
+        
+    }
+
+.padre-profe{
+    font-family: 'Almarai', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+    
+}
+
+
+.portada-gym{
+   background-image: url(../img/gym-portada.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 700px;
+   width: 100%;
+   
+   
+}
+
+.centrar{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+.padre-actividades{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: space-evenly;
+      
+    
+}
+
+.actividades{
+    font-family: 'Almarai', sans-serif;
+    color: orange;
+    margin: 50px 5px;
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    
+   
+}
+.actividades-img{
+    border-radius: 5px;
+}
+
+.ver{
+    background-color: rgb(17, 80, 198);
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.padre-staff{
+display: flex;
+align-content: center;
+flex-wrap: wrap;
+justify-content: space-evenly;
+  
+   
+}
+
+.staff-inicio{
+    
+    margin: 50px 0px;
+    padding: 3px;
+    margin-top: 60px;
+    max-width: 100%;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 7px;   
+    position: relative; 
+    
+
+}
+
+.conocer-mas{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    background-color: rgb(17, 80, 198);
+    border-radius: 4px;          
+}
+
+.padre-planes{
+    font-family: 'Almarai', sans-serif;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 30px;
+    color: orange;
+    gap: 50px;
+    
+    
+}
+
+.planes-img{
+    
+    width: 300px;
+    border-radius: 7px
+   
+}
+
+.padre-contacto{
+    font-size: 20px;
+    
+}
+
+.mapa-img{
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin: 0 auto;
+    background-color: orange;
+    margin:30px 80px 50px 150px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+.padre-actividades-html{
+    font-family: 'Almarai', sans-serif;    
+    font-size: 20px;
+    
+}
+ 
+
+
+.parrafo-actividad{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.actividades-html{
+    text-align: center;    
+    margin: 15px;
+}
+
+.padre-planes-html{
+
+    font-family: 'Almarai', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+}
+
+.planes-html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(255,165,0);
+    color: white(17, 80, 198);
+    font-size: 18px;
+    margin: 55px;
+    border-radius: 7px;
+    text-align: center;
+    
+
+}
+.parrafo-planes{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.img-plan-html{
+    width: 250px;
+    margin: 10px;
+    border-radius: 7px;
+    border: solid;
+}
+
+
+.form{
+    
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; 
+    
+}
+.form input{
+    width: 60%;
+    height: 25px;
+    border-radius: 7px;
+}
+
+    
+
+footer{
+       
+    background-color: rgba(17, 80, 198,.8);
+    font-family: 'Almarai', sans-serif;
+    text-align: center;
+    
+}
+
+/*Comenzar a aplicar Bootstrap*/
+
+.navbar{
+    width: 100%;
+
+}
+
+.navbar-nav{
+    gap: 40px;
+    
+} 
+
+.nav-item:hover {
+    background-color: orange;
+    border-radius: 2px;
+       
+}
+
+.redes img{
+    width: 30px;
+}
+
