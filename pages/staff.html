@@ -11,77 +11,98 @@
 </head>
 <body>
     <header>
-            <a href="../index.html">
-                <img src="../img/LOGO BE RAINING-01.png" alt="Logo be trainig" title="Este es logo be training" class="logo-peque">
-
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                    
-                </li>
-    
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                     
-                </li>
-    
-                <li>
-                    <a href="staff.html">Staff</a>
-                    
-                </li>
-    
-                <li>
-                    <a href="planes.html">Planes</a>
-                    
-                </li>
-    
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                    
-                </li>
-            </ul>
-        </nav>
-         
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="../index.html">
+                    <img src="../img/LOGO BE RAINING-01.png" alt="Logo be trainig" title="Este es logo be training" class="logo-peque">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></a>
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="staff.html">Staff</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="planes.html">Planes</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
     </header>
     
-    <main id="staff">
+    <main>
+
         <h1>STAFF</h1>
-
-        <div class="padre-profe">
-
-            <div class="profe">
-                <img src="../Img/profe 1.jpg" alt="Profesor 1" class="profe-img">
-                    <h4>Profesor Angelo</h4>
-                    <p>Profesor de Educacion Fisica y Licenciado en ciencias del ejercicio</p>
-                    <p>Especialista en Trail Running y Running</p>
-                    <p>Instructor en musculacion, entrenador personal y en entrenamiento deportivo</p>
-          </div>
-  
-          <div class="profe">
-                    <img src="../img/profe 2.jpg" alt="Profesor 2" class="profe-img">
-                    <h4>Profesor Eric</h4>
-                    <p>Profesor de Educacion Fisica</p>
-                    <p>Especialista en alto rendimiento y salud</p>
-                    <p>Entrenador de basquetbol</p>
-          </div>
-          
+        <div class="padre-staff-html">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/profe 1.jpg" class="img-fluid rounded-start" alt="profe1">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Profesor Angelo</h5>
+                      <p class="card-text">Profesor de Educacion Fisica y Licenciado en Ciencias del Ejercicio</p>
+                      <p class="card-text">Especialista en Trail Running y Running</p>
+                      <p class="card-text">Instructor en Musculacion, Personal Training y Preparador Fisico</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/profe 2.jpg" class="img-fluid rounded-start" alt="profe2">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Profesor Eric</h5>
+                      <p class="card-text">Profesor de Educacion Fisica</p>
+                      <p class="card-text">Especialista en alto rendimineto y salud</p>
+                      <p class="card-text">Instructor en Musculacion, Personal Training y Preparador Fisico</p>
+                      <p class="card-text">Entrenador de Basquet</p>
+                      <p class="card-text">Guardavidas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         
        
     </main>
 
       
-    <Footer>       
-        Sitio web creado por Angelo Genesini 
-        Instagram @betraining_ce 
+    <footer class="mt-5"> 
+        <p>Sitio web creado por Angelo Genesini</p>
+        <!--logo redes-->
+        <div class="redes">
+            <a href="https://www.instagram.com/betraining_ce/" target="_blank">
+              <span class="iconify" data-icon="teenyicons:instagram-outline" style="color: black;"></span>
+             </a> 
+            
+            <a href="www.whatsapp.com" target="_blank">
+              <span class="iconify" data-icon="icomoon-free:whatsapp" style="color: black;"></span>
+             </a>
+        </div>
+
+     </footer>
      
-        
-        
-     </Footer>
-          
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+ <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
     
 </body>
 </html>
