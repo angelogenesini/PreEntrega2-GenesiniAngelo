@@ -277,15 +277,12 @@ justify-content: space-evenly;
 
 
 
-
 .padre-actividades-html{
     font-family: 'Almarai', sans-serif;    
     font-size: 20px;
     
 }
  
-
-
 .parrafo-actividad{
     width: 85%;
     margin: 0 auto;
@@ -411,7 +408,7 @@ textarea {
 }
 
 @media (max-width:480px) {
-    form {
+    .form {
         width: 100%;
         
     }
@@ -455,6 +452,17 @@ footer {
     }
 
     .carousel-item img{
-        height: 700px;
+        height: 600px;
+    }
+}
+
+
+@media (min-width:768px){
+    #carouselExample{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 600px;
     }
 }
