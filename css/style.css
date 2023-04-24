@@ -431,6 +431,12 @@ footer {
     width: 100%;
 
 }
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    
+}
  
 .navbar-nav {
     gap: 40px;
@@ -442,6 +448,8 @@ footer {
     border-radius: 2px;
        
 }
+
+
 
 /*Media queries Carrusel*/
 
