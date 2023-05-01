@@ -92,6 +92,12 @@ p{
 
 }
 
+.active{
+    background-color: orange;
+    border-radius: 30px;
+
+}
+
 #staff{
     margin-top: 20px;
         
@@ -124,6 +130,7 @@ p{
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;  
+    
 }
 .actividades{
     font-family: 'Almarai', sans-serif;
@@ -395,7 +402,7 @@ footer {
     
 }
 
-/*Comenzar a aplicar Bootstrap*/
+/*Css de navegador*/
 
 .navbar {
     width: 100%;   
@@ -419,11 +426,16 @@ footer {
     border-color: orange;
 }
 
+.navbar-toggler-icon{
+    background: url('https://api.iconify.design/solar/hamburger-menu-outline.svg?color=orange') no-repeat center center / contain;
+}
+
 .nav-item:hover {
     background-color: orange;
-    border-radius: 2px;
+    border-radius: 30px;
      
 }
+
 
 
 /*Media queries Carrusel*/
