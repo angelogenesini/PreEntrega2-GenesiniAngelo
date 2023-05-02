@@ -14,12 +14,12 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-block: 1rem solid;writing-mode: horizontal-tb; color: orange;
+    border-block: 5px solid;writing-mode: horizontal-tb; color: orange;
 }
 
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     margin-top: 150px;
 
@@ -144,8 +144,12 @@ p{
 }
 .actividades-img{
     border-radius: 5px;
+    transform: scale();
 }
 
+.actividades-img:hover {
+    transform: scale(1.02);
+}
 .ver{
     background-color: black;
     color: white;
@@ -227,19 +231,23 @@ justify-content: space-evenly;
 .padre-planes{
     font-family: 'Almarai', sans-serif;
     display: flex;
-    align-content: center;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
     margin: 30px;
     color: orange;
-    gap: 50px; 
+    gap: 80px; 
 }
 
 .planes-img{
     width: 300px;
-    border-radius: 7px 
+    border-radius: 7px
+     
+}
+
+.planes-img:hover{
+    transform: scale(1.02);
 }
 
 /*Media q aplicada a Planes index*/
@@ -430,13 +438,10 @@ footer {
     background: url('https://api.iconify.design/solar/hamburger-menu-outline.svg?color=orange') no-repeat center center / contain;
 }
 
-.nav-item:hover {
-    background-color: orange;
-    border-radius: 30px;
-     
+.nav-item a:hover {
+    color: white;
+         
 }
-
-
 
 /*Media queries Carrusel*/
 
