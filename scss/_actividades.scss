@@ -1,0 +1,33 @@
+/*ACTIVIDADES HTML*/
+.padre-actividades-html{
+    font-family: $fuente;    
+    font-size: $letra-mediana;   
+
+    .parrafo-actividad{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.actividades-html{
+    text-align: center;    
+    margin: 15px;
+}
+
+/*aplicando media queries a Actividades*/
+@media (max-width: $mobil){
+    .padre-actividades-html{
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+}
+@media (max-width: $tablet){
+    .padre-actividades-html{
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+}

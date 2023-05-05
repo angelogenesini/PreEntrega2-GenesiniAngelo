@@ -1,0 +1,11 @@
+/*STAFF HTML*/
+.padre-staff-html{
+    @include flex-columna;
+    gap: $espacio-grande;
+
+    .card{
+        background-color: $color-secundario;
+        color: $color-terciario;
+        text-align: center;
+        }
+}

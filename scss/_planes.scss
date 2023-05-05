@@ -1,0 +1,53 @@
+/*PLANES HTML*/
+.padre-planes-html{
+    font-family: $fuente;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.planes-html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $color-secundario;
+    color: $color-terciario;
+    font-size: $letra-xmediana;
+    margin: $espacio-xgrande;
+    border-radius: 7px;
+    text-align: center;    
+
+}
+.parrafo-planes{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-plan-html{
+    width: 250px;
+    margin: $espacio-chico;
+    border-radius: 7px;
+    border: solid;
+}
+
+/*aplicando media queries a Planes html*/
+@media (max-width: $mobil){
+    .planes-html{
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media (max-width: $tablet){
+    .planes-html{
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+}

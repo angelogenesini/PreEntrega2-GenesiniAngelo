@@ -216,5 +216,172 @@ footer .redes a {
 .padre-contacto {
   font-size: 20px;
 }
+.padre-contacto .mapa-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: orange;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*ACTIVIDADES HTML*/
+.padre-actividades-html {
+  font-family: "Almarai", sans-serif;
+  font-size: 20px;
+}
+.padre-actividades-html .parrafo-actividad {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.actividades-html {
+  text-align: center;
+  margin: 15px;
+}
+
+/*aplicando media queries a Actividades*/
+@media (max-width: 481px) {
+  .padre-actividades-html {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .padre-actividades-html {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+}
+/*STAFF HTML*/
+.padre-staff-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.padre-staff-html .card {
+  background-color: orange;
+  color: white;
+  text-align: center;
+}
+
+/*PLANES HTML*/
+.padre-planes-html {
+  font-family: "Almarai", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.planes-html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 30px;
+  margin: 60px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.parrafo-planes {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-plan-html {
+  width: 250px;
+  margin: 10px;
+  border-radius: 7px;
+  border: solid;
+}
+
+/*aplicando media queries a Planes html*/
+@media (max-width: 481px) {
+  .planes-html {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .planes-html {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*CONTACTO HTML*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.padre-form-html {
+  margin: 0 auto;
+}
+
+.form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#boton {
+  background: orange;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: none;
+    width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .container {
+    display: grid;
+    grid-template-columns: none;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

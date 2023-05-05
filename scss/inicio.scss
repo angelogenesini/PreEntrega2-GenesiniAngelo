@@ -95,6 +95,15 @@
     font-size: $letra-mediana;
 
     .mapa-img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin: 0 auto;
+    background-color: $color-secundario;
+    padding: 5px;
+    border-radius: 5px;
         
     }
 }
+
