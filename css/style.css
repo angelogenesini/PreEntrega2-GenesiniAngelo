@@ -1,468 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/*colores*/
+/*Tamaño de letras*/
+/*Resoluciones de pantall*/
+/*Margenes*/
+/*Radio botones*/
+/*Fuente*/
+/*Mixins*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-      
-    position:fixed;
-    top: 0;
-    z-index: 1;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-block: 5px solid;writing-mode: horizontal-tb; color: orange;
+/*HEADER SASS*/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-block: 5px solid;
+  writing-mode: horizontal-tb;
+  color: orange;
 }
 
-
-body{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin-top: 150px;
-
-} 
-
-.logo-peque{
-    width: 300px;
-    height: 100px;
+.logo-peque {
+  width: 300px;
+  height: 100px;
 }
 
-img{
- max-width: 100%;
+.navbar {
+  width: 100%;
 }
 
-ul{
-    list-style: none;
-       
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
 }
 
-a{
-   text-decoration: none; 
-   color: orange;
-   
+.navbar-nav {
+  gap: 40px;
 }
 
-.img-tam{
-    width: 400;
-    height: 300;
+.nav-link {
+  color: orange;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 25px;
-    
+.nav-link.active {
+  background-color: orange;
+  border-radius: 40px;
 }
 
-h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 20px;
-    font-size: 20px;
+.navbar-toggler {
+  color: orange;
+  border-color: orange;
 }
 
-p{
-    margin-bottom: 15px;
+.navbar-toggler-icon {
+  background: url("https://api.iconify.design/solar/hamburger-menu-outline.svg?color=orange") no-repeat center center/contain;
 }
 
-.profe{
-    background-color: black;
-    margin: 50px 0px;
-    padding: 10px;
-    width: 450px;
-    border: solid 5px orange;
-    text-align: center;
-    position: relative;
-    border-radius: 7px;       
+.nav-item a:hover {
+  color: white;
 }
 
-.profe-img{
-    width: 400px;
-    height: 300px;
+/*CARRUSEL*/
+@media (min-width: 481px) {
+  #carouselExample {
     margin: 0 auto;
+    width: 50%;
+  }
+  .carousel-item img {
+    height: 600px;
+  }
+}
+@media (min-width: 992px) {
+  #carouselExample {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .carousel-item img {
+    height: 600px;
+  }
+}
+/*BODY SASS*/
+body {
+  font-family: "Almarai", sans-serif;
+  background-color: black;
+  margin-top: 150px;
+  color: white;
 }
 
-.menu {
-    font-family: 'Almarai', sans-serif;
-   display: flex;
-   flex-direction: row;
-   justify-content:space-evenly;  
-   gap: 60px;
-
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.active{
-    background-color: orange;
-    border-radius: 30px;
-
+p {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
-#staff{
-    margin-top: 20px;
-        
-    }
-
-.padre-profe{
-    font-family: 'Almarai', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;    
+/*FOOTER*/
+footer {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .redes a {
+  text-decoration: none;
+  font-size: 30px;
 }
 
-.portada-gym{
-   background-image: url(../img/gym-portada.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   height: 700px;
-   width: 100%;  
+/*BOTONES*/
+.btn {
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+  border-color: orange;
 }
-.centrar{
-    text-align: center;
-    margin-top: 30px;
-    text-decoration: underline;
-}
-.padre-actividades{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;  
-    
-}
-.actividades{
-    font-family: 'Almarai', sans-serif;
-    color: orange;
-    margin: 50px 5px;
-    padding: 10px;
-    width: 300px;
-    max-width: 100%;
-    position: relative;
-    text-align: center; 
-}
-.actividades-img{
-    border-radius: 5px;
-    transform: scale();
+.btn:hover {
+  background-color: orange;
 }
 
-.actividades-img:hover {
-    transform: scale(1.02);
+/*ACTIVIDADES INICIO*/
+.padre-actividades {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
 }
-.ver{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    border: solid orange;
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    padding: 4px;
+.padre-actividades .actividades img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.padre-actividades .actividades img:hover {
+  transform: scale(1.02);
 }
 
-.ver:hover{
-    background-color: orange;
-    color: white;
+.actividades {
+  color: white;
+  margin: 50px 5px;
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 /*Aplico media queries a Actividades Index*/
-@media (max-width: 480px){
-    .padre-actividades{
-         flex-direction: column;                
-    }
-}    
-
-.padre-staff{
-display: flex;
-align-content: center;
-flex-wrap: wrap;
-justify-content: space-evenly;
-   
-}
-
-@media (max-width:480px){
-    .padre-staff{
-        display: block;
-        flex-direction: column;
-
-    }
-}
-.padre-staff-html{
-    display: flex;
+@media (max-width: 481px) {
+  .padre-actividades {
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  }
 }
-
-.card{
-    background-color: orange;
-    color: white;
-
+@media (max-width: 768px) {
+  .padre-actividades-html {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
 }
-
-.btn{
-    background-color: black;
-    border-radius: 40px;
-
-}
-
-.btn-primary{
-    border-color: orange;
-    
-}
-.staff-inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    
+/*STAFF INICIO*/
+.staff-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 /*Media q para staff index*/
 @media (min-width: 768px) {
-    .staff-inicio{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;       
-    }
+  .staff-inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
-
-.padre-planes{
-    font-family: 'Almarai', sans-serif;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin: 30px;
-    color: orange;
-    gap: 80px; 
+/*PLANES INICIO*/
+.padre-planes {
+  font-family: "Almarai", sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin: 30px;
+  color: white;
+  gap: 130px;
 }
-
-.planes-img{
-    width: 300px;
-    border-radius: 7px
-     
+.padre-planes .planes-img {
+  width: 300px;
+  border-radius: 7px;
 }
-
-.planes-img:hover{
-    transform: scale(1.02);
+.padre-planes .planes-img:hover {
+  transform: scale(1.02);
 }
 
 /*Media q aplicada a Planes index*/
-@media(max-width:480px){
-    .padre-planes{
-        display: block;   
-    }
+@media (max-width: 480px) {
+  .padre-planes {
+    display: block;
+  }
+}
+/*CONTACTO INICIO*/
+.padre-contacto {
+  font-size: 20px;
 }
 
-.padre-contacto{
-    font-size: 20px;
-    
-}
-
-.mapa-img{
-    
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;  
-    margin: 0 auto;
-    background-color: orange;
-    padding: 5px;
-    border-radius: 5px;
-    
-}
-.padre-actividades-html{
-    font-family: 'Almarai', sans-serif;    
-    font-size: 20px;   
-}
-
-.parrafo-actividad{
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.actividades-html{
-    text-align: center;    
-    margin: 15px;
-}
-
-
-/*aplicando media queries a Actividades*/
-@media (max-width:480px){
-    .padre-actividades-html{
-        display: block;
-        width: 100%;
-        text-align: center;
-        align-content: center;
-    }
-}
-@media (max-width:768px){
-    .padre-actividades-html{
-        display: block;
-        width: 100%;
-        text-align: center;
-        align-content: center;
-    }
-}
-.padre-planes-html{
-
-    font-family: 'Almarai', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; 
-}
-.planes-html{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(255,165,0);
-    color: white(17, 80, 198);
-    font-size: 18px;
-    margin: 55px;
-    border-radius: 7px;
-    text-align: center;    
-
-}
-.parrafo-planes{
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.img-plan-html{
-    width: 250px;
-    margin: 10px;
-    border-radius: 7px;
-    border: solid;
-}
-
-/*aplicando media queries a Planes html*/
-@media (max-width:480px){
-    .planes-html{
-        display: block;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        align-content: center;
-    }
-}
-
-@media (max-width:768px){
-    .planes-html{
-        display: block;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.padre-form-html {
-    margin: 0;
-    
-
-}
-.form {
-    width: 450px;
-    margin: auto;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-
-}
-
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-
-#boton{
-    background: orange;
-    padding: 10px;
-}
-
-@media (max-width:480px) {
-    .form {
-        width: 100%;
-        
-    }
-} 
-
-footer {
-       
-    background-color: rgb(255,165,0);
-    font-family: 'Almarai', sans-serif;
-    text-align: center;
-    width: 100%;
-    
-}
-
-/*Css de navegador*/
-
-.navbar {
-    width: 100%;   
-}
-
-.navbar-collapse {
-    align-items: center;
-    justify-content: space-between;    
-}
- 
-.navbar-nav {
-    gap: 40px; 
-} 
-
-.nav-link{
-    color: orange;
-}
-
-.navbar-toggler{
-    color: orange;
-    border-color: orange;
-}
-
-.navbar-toggler-icon{
-    background: url('https://api.iconify.design/solar/hamburger-menu-outline.svg?color=orange') no-repeat center center / contain;
-}
-
-.nav-item a:hover {
-    color: white;
-         
-}
-
-/*Media queries Carrusel*/
-
-@media (min-width:481px){
-    #carouselExample{
-        margin: 0 auto;
-        width: 50%;
-    }
-
-    .carousel-item img{
-        height: 600px;
-    }
-}
-
-
-@media (min-width:768px){
-    #carouselExample{
-        margin: 0 auto;
-        width: 100%;
-    }
-    .carousel-item img{
-        height: 600px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

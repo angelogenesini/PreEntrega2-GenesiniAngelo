@@ -1,0 +1,40 @@
+/*colores*/
+$color-primario: black;
+$color-secundario: orange;
+$color-terciario: white;
+
+/*Tamaño de letras*/
+$letra-chica: 14px;
+$letra-mediana: 20px;
+$letra-xmediana: 30px;
+$letra-grande: 40px;
+$letra-xgrande: 60px;
+
+/*Resoluciones de pantall*/
+$mobil: 481px;
+$tablet: 768px;
+$desktop: 992px;
+
+/*Margenes*/
+$espacio-chico: 10px;
+$espacio-medio: 20px;
+$espacio-grande: 30px;
+$espacio-xgrande: 60px;
+
+/*Radio botones*/
+$radio-chico: 7px;
+$radio-medio: 15px;
+$radio-grande: 40px;
+
+/*Fuente*/
+$fuente: 'Almarai', sans-serif;
+$fuente-h2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+/*Mixins*/
+@mixin flex-columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

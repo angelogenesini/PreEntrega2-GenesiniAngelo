@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER SASS*/
+header{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    background-color: $color-primario;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-block: 5px solid;writing-mode: horizontal-tb; color: $color-secundario;
+}
+
+.logo-peque{
+    width: 300px;
+    height: 100px;
+}
+
+.navbar {
+    width: 100%;  
+     
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;    
+}
+ 
+.navbar-nav {
+    gap: 40px; 
+} 
+
+.nav-link{
+    color: $color-secundario;
+}
+
+.nav-link.active{
+    background-color: $color-secundario;
+    border-radius: $radio-grande;
+}
+
+.navbar-toggler{
+    color: $color-secundario;
+    border-color: $color-secundario;
+    
+}
+.navbar-toggler-icon{
+    background: url('https://api.iconify.design/solar/hamburger-menu-outline.svg?color=orange') no-repeat center center / contain;
+}
+
+.nav-item a:hover {
+    color: $color-terciario;
+         
+}
+
+/*CARRUSEL*/
+@media (min-width: $mobil){
+    #carouselExample{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .carousel-item img{
+        height: 600px;
+    }
+}
+
+@media (min-width: $desktop){
+    #carouselExample{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 600px;
+    }
+}
+     
+/*BODY SASS*/ 
+
+body{
+    font-family: $fuente;
+    background-color: $color-primario;
+    margin-top: 150px;
+    color: $color-terciario;
+}
+
+h1, h2{
+    text-align: center;
+    margin-bottom: $espacio-grande;
+    margin-top: $espacio-grande;
+    font-family: $fuente-h2;
+}
+
+p{
+    margin-bottom: $espacio-chico;
+    font-size: $letra-mediana;
+}
+
+/*FOOTER*/
+footer {
+    background-color: $color-secundario;
+    @include flex-columna;
+    
+    .redes a{
+        text-decoration: none;
+        font-size: $letra-xmediana;  
+    }
+}
+
+/*BOTONES*/
+.btn{
+    background-color: $color-primario;
+    border-radius: $radio-grande;
+    color: $color-terciario;
+    text-decoration: none;
+    border-color: $color-secundario;
+
+    &:hover{
+        background-color: $color-secundario;
+    }
+}
+
+

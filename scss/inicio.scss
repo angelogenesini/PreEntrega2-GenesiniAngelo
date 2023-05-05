@@ -1,0 +1,100 @@
+/*ACTIVIDADES INICIO*/
+.padre-actividades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    
+
+    .actividades img{
+        max-width: 100%;
+        border-radius: 5px;
+        
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+}
+.actividades{
+    color: $color-terciario;
+    margin: 50px 5px;
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    text-align: center; 
+}
+
+/*Aplico media queries a Actividades Index*/
+@media (max-width: $mobil){
+    .padre-actividades{
+         flex-direction: column;                
+    }
+}    
+
+@media (max-width: $tablet){
+    .padre-actividades-html{
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+/*STAFF INICIO*/
+.staff-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+/*Media q para staff index*/
+@media (min-width: 768px) {
+    .staff-inicio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;       
+    }
+}
+
+/*PLANES INICIO*/
+.padre-planes{
+    font-family: $fuente;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: $espacio-xgrande;
+    margin: 30px;
+    color: $color-terciario;
+    gap: 130px; 
+
+    .planes-img{
+        width: 300px;
+        border-radius: 7px;
+
+        &:hover{
+            transform: scale(1.02);
+            }
+        }
+         
+    }
+
+/*Media q aplicada a Planes index*/
+@media(max-width:480px){
+    .padre-planes{
+        display: block;   
+    }
+}
+
+/*CONTACTO INICIO*/
+.padre-contacto{
+    font-size: $letra-mediana;
+
+    .mapa-img{
+        
+    }
+}
